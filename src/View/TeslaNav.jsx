@@ -6,19 +6,29 @@ import { PiGlobe } from "react-icons/pi";
 import { IoMdHelpCircleOutline } from "react-icons/io";
 import { IoPersonCircleOutline } from "react-icons/io5";
 import CutomDraw from '../Components/CustomDra';
+import Vehicles from './Vehicles';
 
 function TeslaNav() {
-    const [open, setOpen] = useState(false);
-    // const [open, setOpen] = React.useState(false);
+    const [showCanvas, setShowCanvas] = useState(false)
+  const [canvasTitle, setCanvasTitle] = useState('');
+  const [canvasChildren, setCanvasChildren] = useState(null);
 
-    const openDrawer = () => setOpen(true);
-    const closeDrawer = () => setOpen(false);
+  const handleCanvas = (targetCavnas)=>{
+    console.log(targetCavnas)
+    if(targetCavnas === 'Attendance1'){
+      setCanvasTitle('')
+      setCanvasChildren(<Vehicles />)
+    }
+    
+    setShowCanvas(true)
+
+  }
 
     return (
         <>
-            <div>
-                <Navbar className='fixed top-0 left-0 w-full py-4 text-[#333]'>
-                    <div className='container mx-auto flex justify-between'>
+            <div className='w-full '>
+                <div className='fixed top-0 left-0 w-full py-4 px-4 text-[#333]'>
+                    <div className='  mx-auto  flex justify-between'>
                         <div>
                             {/* Tesla logo SVG code */}
                             <h1 className="tds-site-logo tds-align--start mt-[10px]" alt="This is a Tesla Logo">
@@ -33,8 +43,8 @@ function TeslaNav() {
                         </div>
 
                         <div className='font-semibold text-[16px]'>
-                            <ul className='flex flex-row gap-[30px]'>
-                                <li>Vehicles</li>
+                            <ul className='flex flex-row gap-4'>
+                                <li onClick={()=>handleCanvas('Attendance1')}>Vehicles</li>
                                 <li>Energy</li>
                                 <li>Charging</li>
                                 <li>Discover</li>
@@ -42,22 +52,36 @@ function TeslaNav() {
                             </ul>
                         </div>
 
-                        <div className='flex justify-between gap-[15px]'>
-                            <div onClick={openDrawer}><PiGlobe size={'28px'} /></div>
+                    <div className=''>
+                        <div className='flex justify-between gap-2'>
+                            <div><PiGlobe size={'28px'} /></div>
                             <div><IoMdHelpCircleOutline size={'28px'} /></div>
                             <div><IoPersonCircleOutline size={'28px'} /></div>
                         </div>
                     </div>
-                </Navbar>
+
+                    </div>
+                </div>
             </div>
 
             <CutomDraw
-            open={open}
-            onClose={closeDrawer}
+            open={showCanvas}
+            onClose={()=>setShowCanvas(false)}
+            title= {canvasTitle}
             placement="top"
-            // width={'100%'} // Set your default width here
-            // body={'this is the body of drawer'}
+            width={'45%'} 
+            body = {canvasChildren}
+
             />
+
+        {/* <Canvas
+        show = {showCanvas}
+        handleClose = {()=>setShowCanvas(false)}
+        title= {canvasTitle}
+        body = {canvasChildren}
+        placement={'end'}
+        width={'45%'}
+      /> */}
         </>
     )
 }
