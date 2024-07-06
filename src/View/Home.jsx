@@ -5,10 +5,10 @@ import icon1 from '../assets/images/logo.png';
 import icon2 from '../assets/images/Group 442.png';
 import img3 from '../assets/images/Group 441.png';
 import img4 from '../assets/images/Group 342.png';
-import CustomDraw from '../Components/CustomDra';
 import { IoShareSocial } from "react-icons/io5";
 import { ButtonGroup, Button } from "@material-tailwind/react";
 import { GrMenu } from "react-icons/gr";
+import { Select, Option } from "@material-tailwind/react";
 
 function Home() {
     return (
@@ -43,15 +43,26 @@ function Home() {
                                                 </Button>
                                             </ButtonGroup>
                                         </div>
+                                        
 
                                     </div>
+                                    <div className='py-2'>
+    <Select style={{border:"none"}} label={
+        <div className="flex items-center"><GrMenu color='#fff' size={"50px"} className="mr-2" /> </div>
+          }>
+        <Option>Material Tailwind HTML</Option>
+        <Option>Material Tailwind React</Option>
+        <Option>Material Tailwind Vue</Option>
+        <Option>Material Tailwind Angular</Option>
+        <Option>Material Tailwind Svelte</Option>
+    </Select>
+</div>
 
-                                    <div className='py-1'>
-                                        <GrMenu color='#fff' size={"50px"} />
-                                    </div>
 
                                 </div>
                             </div>
+
+
 
                         </div>
                     </div>
