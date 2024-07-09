@@ -39,6 +39,11 @@
   }
 } */
 
-body {
+/* body {
   font-family:auto;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+input::placeholder {
+    font-family: 'Poppins', sans-serif;
 }
