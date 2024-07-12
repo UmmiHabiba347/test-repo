@@ -28,8 +28,8 @@ import g19 from '../assets/images/group 17.png';
 function SelectedWPPOOL() {
   return (
     <>
-    <div p-6>
-        <div className='px-16 w-full h-[100vh]'>
+    <div className='mb-0'>
+        <div className='px-16 w-full h-full '>
         {/* TEXT */}
         <div><span  style={{fontFamily:'Nantes'}} className='ml-4 text-[48px] text-[#333] font-normal'>Selected WPPOOL Portfolio Companies</span></div>
         <div className='main flex flex-col gap-4'>
@@ -105,6 +105,8 @@ function SelectedWPPOOL() {
 
         </div>
         </div>
+
+
 
     </div>
     </>

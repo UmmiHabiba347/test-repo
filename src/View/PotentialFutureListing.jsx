@@ -18,7 +18,8 @@ function PotentialFutureListing() {
   return (
     <>
     <div className='p-6'>
-    <div className='w-full h-[100vh]'>
+    <div className='w-full h-full'>
+
         {/* TEXT */}
         <div className='px-16 leading-2'>
         <div><span style={{fontFamily:'Nantes'}} className='text-[48px] text-[#333] font-normal'>Potential Future Listing</span></div>
@@ -27,37 +28,37 @@ function PotentialFutureListing() {
         </div>
         {/* CARDS */}
         <div className='flex flex-row gap-8 w-[100%] mt-8 px-16'>
-            <div className='w-[20%] bg-[#fff] h-[200px] flex justify-center items-center'>
+            <div className=' w-[20%] bg-[#fff] h-[16vh] px-4 flex justify-center items-center'>
                 <img src={strip} alt="" />
             </div>
-            <div className='w-[20%] bg-[#fff] h-[200px] flex justify-center items-center'>
+            <div className='w-[20%] bg-[#fff] h-[16vh] px-4 flex justify-center items-center'>
                 <img src={Klarna} alt="" />
             </div>
-            <div className='w-[20%] bg-[#fff] h-[200px] flex justify-center items-center'>
+            <div className='w-[20%] bg-[#fff] h-[16vh] px-4 flex justify-center items-center'>
                 <img src={PLaid} alt="" />
             </div>
-            <div className='w-[20%] bg-[#fff] h-[200px] flex justify-center items-center'>
+            <div className='w-[20%] bg-[#fff] h-[16vh] px-4 flex justify-center items-center'>
                 <img src={Checkout} alt="" />
             </div>
-            <div className='w-[20%] bg-[#fff] h-[200px] flex justify-center items-center'>
+            <div className='w-[20%] bg-[#fff] h-[16vh] px-4 flex justify-center items-center'>
                 <img src={Revoult} alt="" />
             </div>
         </div>
         {/* CARDS 2 */}
         <div className='flex flex-row gap-8 w-[100%] mt-8 px-16'>
-            <div className='w-[20%] bg-[#fff] h-[200px] flex justify-center items-center'>
+            <div className='w-[20%] bg-[#fff] h-[16vh] px-4 flex justify-center items-center'>
                 <img src={chime} alt="" />
             </div>
-            <div className='w-[20%] bg-[#fff] h-[200px] flex justify-center items-center'>
+            <div className='w-[20%] bg-[#fff] h-[16vh] px-4 flex justify-center items-center'>
                 <img src={N26} alt="" />
             </div>
-            <div className='w-[20%] bg-[#fff] h-[200px] flex justify-center items-center'>
+            <div className='w-[20%] bg-[#fff] h-[16vh] px-4 flex justify-center items-center'>
                 <img src={Brex} alt="" />
             </div>
-            <div className='w-[20%] bg-[#fff] h-[200px] flex justify-center items-center'>
+            <div className='w-[20%] bg-[#fff] h-[16vh] px-4 flex justify-center items-center'>
                 <img src={deel} alt="" />
             </div>
-            <div className='w-[20%] bg-[#fff] h-[200px] flex justify-center items-center'>
+            <div className='w-[20%] bg-[#fff] px-2 py-2 flex justify-center items-center'>
                 <img src={gusto} alt="" />
             </div>
         </div>

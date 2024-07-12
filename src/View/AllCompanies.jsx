@@ -26,7 +26,7 @@ function AllCompanies() {
   ];
 
   return (
-    <div className='p-6'>
+    <div className='p-6 px-16'>
       <div className='w-full h-[100vh] bg-[#fff] relative mt-2  p-4 shadow-lg border border-grey rounded-[30px]'>
         <div className='px-8 flex flex-row items-center justify-between'>
           <div style={{fontFamily:'Nantes'}} className='text-[45px] font-normal'>All Companies</div>

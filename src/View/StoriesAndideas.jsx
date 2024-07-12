@@ -20,10 +20,10 @@ function StoriesAndideas() {
             {/* CARDS ROW1 */}
             <div className='w-[100%] flex flex-row mt-16 gap-6'>
               <div className='relative w-[33.333%] bg-[#fff] py-4 rounded-[10px] overflow-visible'>
-                <div className='flex ml-4 w-full'>
+                <div className='flex  w-full'>
                   <img className='z-8 transform -translate-y-[45%]' src={zimg1} alt="" />
                 </div>
-                <div className='z-2 transform -translate-y-[25%] ml-6' >
+                <div className='z-2 transform -translate-y-[25%] px-4' >
                   <div className='text-[#3DA5F4]'>By, Shahabuddin Sagor</div>
                   <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
                   <div>Lorem ipsum dolor sit amet.</div>
@@ -40,10 +40,10 @@ function StoriesAndideas() {
                 </div>
               </div>
               <div className='relative w-[33.333%] bg-[#fff] py-4 rounded-[10px] overflow-visible'>
-                <div className='flex ml-4 w-full'>
+                <div className='flex  w-full'>
                   <img className='z-8 transform -translate-y-[45%]' src={zimg2} alt="" />
                 </div>
-                <div className='z-2 transform -translate-y-[25%] ml-6' >
+                <div className='z-2 transform -translate-y-[25%] px-4' >
                   <div className='text-[#3DA5F4]'>By, Naem Khan</div>
                   <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
                   <div>Lorem ipsum dolor sit amet.</div>
@@ -60,10 +60,10 @@ function StoriesAndideas() {
                 </div>
               </div>
               <div className='relative w-[33.333%] bg-[#fff] py-4 rounded-[10px] overflow-visible'>
-                <div className='flex ml-4 w-full'>
+                <div className='flex  w-full'>
                   <img className='z-8 transform -translate-y-[45%]' src={zimg3} alt="" />
                 </div>
-                <div className='z-2 transform -translate-y-[25%] ml-6' >
+                <div className='z-2 transform -translate-y-[25%] px-4' >
                   <div className='text-[#3DA5F4]'>By; Shagor Shahabuddin</div>
                   <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
                   <div>Lorem ipsum dolor sit amet.</div>
@@ -81,12 +81,12 @@ function StoriesAndideas() {
               </div>
             </div>
             {/* CARDS ROW2 */}
-            <div className='w-[100%] flex flex-row mt-16 gap-6'>
+              <div className='w-[100%] flex flex-row mt-16 gap-6'>
               <div className='relative w-[33.333%] bg-[#fff] py-4 rounded-[10px] overflow-visible'>
-                <div className='flex ml-4 w-full'>
+                <div className='flex  w-full'>
                   <img className='z-8 transform -translate-y-[45%]' src={zimg1} alt="" />
                 </div>
-                <div className='z-2 transform -translate-y-[25%] ml-6' >
+                <div className='z-2 transform -translate-y-[25%] px-4' >
                   <div className='text-[#3DA5F4]'>By, Shahabuddin Sagor</div>
                   <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
                   <div>Lorem ipsum dolor sit amet.</div>
@@ -103,10 +103,10 @@ function StoriesAndideas() {
                 </div>
               </div>
               <div className='relative w-[33.333%] bg-[#fff] py-4 rounded-[10px] overflow-visible'>
-                <div className='flex ml-4 w-full'>
+                <div className='flex  w-full'>
                   <img className='z-8 transform -translate-y-[45%]' src={zimg2} alt="" />
                 </div>
-                <div className='z-2 transform -translate-y-[25%] ml-6' >
+                <div className='z-2 transform -translate-y-[25%] px-4' >
                   <div className='text-[#3DA5F4]'>By, Naem Khan</div>
                   <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
                   <div>Lorem ipsum dolor sit amet.</div>
@@ -123,10 +123,10 @@ function StoriesAndideas() {
                 </div>
               </div>
               <div className='relative w-[33.333%] bg-[#fff] py-4 rounded-[10px] overflow-visible'>
-                <div className='flex ml-4 w-full'>
+                <div className='flex  w-full'>
                   <img className='z-8 transform -translate-y-[45%]' src={zimg3} alt="" />
                 </div>
-                <div className='z-2 transform -translate-y-[25%] ml-6' >
+                <div className='z-2 transform -translate-y-[25%] px-4' >
                   <div className='text-[#3DA5F4]'>By; Shagor Shahabuddin</div>
                   <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
                   <div>Lorem ipsum dolor sit amet.</div>
@@ -145,7 +145,7 @@ function StoriesAndideas() {
             </div>
         </div>  
 
-        <div className=' mt-28 mb-10' style={{border:'2px solid #90B8F0'}}></div>
+        <div className=' mt-24 mb-16' style={{border:'2px solid #90B8F0'}}></div>
 
       </div>
     </div>

@@ -8,20 +8,22 @@ import PotentialFutureListing from './View/PotentialFutureListing';
 import StateOfUSA from './View/StateOfUSA';
 import StoriesAndideas from './View/StoriesAndideas';
 import SelectedWPPOOL from './View/SelectedWPPOOL';
-
+import AboutWPPOOL from './View/AoutWPOOL'
+import Footer from './View/Footer';
 
 function App() {
   return (
     <>
-<div className='bg-[#F3F3F3]'>
+<div className='bg-[#F3F3F3]  w-[100vw]'>
 <Home />
-<WpIndex />
-<AllCompanies />
+{/* <AllCompanies />
 <PotentialFutureListing />
 <StateOfUSA />
 <StoriesAndideas />
+<AboutWPPOOL />
 <SelectedWPPOOL />
-<StickyNavbar />
+<Footer /> */}
+{/* <StickyNavbar /> */}
 </div>
 
  
