@@ -36,6 +36,8 @@ const options = {
       },
     },
     y: {
+      min: -10,
+      max: 100,
       grid: {
         display: true,
         color: "#f9f9f9",
@@ -46,6 +48,7 @@ const options = {
         callback: function (value) {
           return value + '%';
         },
+        stepSize: 10,
         padding: 10,
       },
     },
@@ -68,64 +71,52 @@ const options = {
   },
 };
 
-const generateRandomData = (numPoints, min, max) => {
-  const data = [];
-  for (let i = 0; i < numPoints; i++) {
-    data.push((Math.random() * (max - min) + min).toFixed(2));
-  }
-  return data;
-};
-
 const LineChart = () => {
-  const numPoints = 86778;
-  const min = -10;
-  const max = 90;
-
   const data = {
-    labels: ['February', 'March', 'April', 'May', 'June', 'July'],
+    labels: ['', '', '', 'February', '', '', '', 'March', '', '', 'April', '', '', '', 'May', '', '', 'June', '', '', 'July'],
     datasets: [
       {
         label: 'WPPOOL',
-        data: generateRandomData(numPoints, min, max),
+        data: [4, 10, 15, 38, 25, 60, 22,16, 32, 22, 77, 47, 52, 13, 17, 94,97, 59, 54, 71, 75, 30, 35, 40, 50, 60, 55, 83, 60, 56, 30],
         borderColor: '#fc714d',
         backgroundColor: '#fc714d',
         fill: false,
         tension: 0.005,
-        pointRadius: false,
+        pointRadius: 0,
       },
       {
         label: 'Google',
-        data: generateRandomData(numPoints, min, max),
+        data: [10, 17, 20, 24, 32, 25, 60, 45, 43, 62, 73, 74, 51, 63, 67, 74, 82, 45, 38, 69, 71, 66, 48, 46, 67, 75, 73, 72, 65, 40],
         borderColor: '#615de3',
         backgroundColor: '#615de3',
         fill: false,
         tension: 0.005,
-        pointRadius: false,
+        pointRadius: 0,
       },
       {
         label: 'Microsoft',
-        data: generateRandomData(numPoints, min, max),
+        data: [-1, -3, -5, 15, -1, -3, 42, 35, -4, 41, 22, 62, 37,10, 81, 65, 69, 20, 85, 45, 38, 69, 71, 66, 48, 46, 67, 75, 73, 72, 65, 40],
         borderColor: '#afcd80',
         backgroundColor: '#afcd80',
         fill: false,
         tension: 0.005,
-        pointRadius: false,
+        pointRadius: 0,
       },
       {
         label: 'Twitter',
-        data: generateRandomData(numPoints, min, max),
+        data: [6, 8, 15, 20, 12, 25, 34, 31, 32, 42, 37, 54, 61, 33, 57, 54, 76, 35, 38, 71, 68, 66, 48, 46, 67, 75, 73, 72, 65, 40],
         borderColor: '#6f34a1',
         backgroundColor: '#6f34a1',
         fill: false,
         tension: 0.005,
-        pointRadius: false,
+        pointRadius: 0,
       },
     ],
   };
 
   return (
-    <div className='w-full h-[500px] py-4'>
-      <Line data={data} options={options} style={{ width: '100% !important' }} />
+    <div style={{width:"full"}} className='w-full h-[500px] py-2'>
+      <Line data={data} options={options} />
     </div>
   );
 }

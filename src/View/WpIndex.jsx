@@ -167,7 +167,8 @@ function WpIndex() {
             </div>
 {/* graph */}
 <div className='relative mt-4'>
-  <div className='absolute top-4 right-[10%] sm:right-[20%] md:right-[25%] lg:right-[30%] xl:right-[30%] z-20 flex flex-row bg-[#fff]'>
+<div style={{borderLeft:'2px solid'}} className='h-[500px] absolute top-0 right-[10%] sm:right-[30%]  md:right-[45%] lg:right-[46%] xl:right-[48%]  z-20'></div>
+  <div className=' absolute top-12 right-[10%] sm:right-[20%] md:right-[25%] lg:right-[40%] xl:right-[40%]  z-20 flex flex-row bg-[#fff]'>
     <div className='px-2 sm:px-3 py-2 sm:py-3 border border-[#333] flex flex-col rounded-xl text-[14px] sm:text-[16px] md:text-[18px]'>
       <div className='font-bold'>May 5, 2022</div>
       <div className='flex gap-1 sm:gap-2'>
